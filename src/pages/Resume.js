@@ -11,17 +11,20 @@ const Resume = () => {
             </div>
             <div class = "container">
                 <div class = "description">
-                    everything on my website in just one pdf!
+                    everything on my website in just one pdf.
                 </div> 
                 <div class="hiders">
                     <p>&nbsp;</p>
                 </div>
-                
             </div>
             <div class = "pdf">
-            </div>
-
-              
+                <embed 
+                    src="/resume.pdf" 
+                    type="application/pdf" 
+                    width="100%" 
+                    height="600px"
+                />
+            </div>  
         </div>
     );
 };
