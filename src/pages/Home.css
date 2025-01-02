@@ -1,0 +1,71 @@
+.home {
+    color: #ffffff;
+    font-family: "Afacad Flux", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+
+.home .title {
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.container {
+    color: #ffecda;
+    font-family: "Afacad Flux", serif;
+    width: 80%;
+    text-transform: lowercase;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+}
+
+.container .description {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    z-index: -1;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.hiders {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .hiders p {
+    position: relative; 
+    clear: both; 
+    margin: 0;
+    float: right; /* makes animation go left-to-right */
+    width:0; /* graceful degradation: if animation doesn't work, these are invisible by default */
+    background: #201f1f; /* same as page background */
+    height: 2rem;
+    animation: typing 2s steps(30, end);
+    animation-fill-mode: both;  /* load first keyframe on page load, leave on last frame at end */
+  }
+  
+  .hiders p:nth-child(2) {
+    animation-delay: 2s;
+  }
+  .hiders p:nth-child(3) {
+    animation-delay: 4s;
+  }
+  .hiders p:nth-child(4) {
+    animation-delay: 6s;
+  }
+  .hiders p:nth-child(5) {
+    animation-delay: 8s;
+  }
+
+/* Typing animation */
+@keyframes typing {
+    from { width: 100% }
+    to { width: 0 }
+}
