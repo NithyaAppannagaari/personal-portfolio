@@ -41,11 +41,11 @@
     text-transform: lowercase;
     position: relative;
     height: auto;
-    animation: bounce 2s infinite;
 }
 
 .photos-grid {
-    
+    opacity: 0; /* Initially transparent */
+    animation: fadeIn 2s ease-in forwards; /* Apply fade-in animation */
     padding-top: 2rem;
 }
 
@@ -60,7 +60,8 @@
     border-radius: 5vh;
     border-width:2px;
     background-color: #000;
-    
+    opacity: 0; /* Initially transparent */
+    animation: fadeIn 2s ease-in forwards; /* Apply fade-in animation */
 }
 
 .contact .title {

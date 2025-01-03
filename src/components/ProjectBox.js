@@ -19,9 +19,17 @@ function ProjectBox(props) {
                     tools: {props.tools}
                 </div> 
             </div>
-            <div class = "name">
-                {props.name}
-            </div>
+           
+                <div class = "name">
+                    {props.name}
+                </div>
+                <div class = "link-icon">
+                    <a href = {props.link}>
+                        <img src = "./link.png" alt = "link icon"/>
+                    </a>
+                </div>
+          
+            
         </div>
     );
 };

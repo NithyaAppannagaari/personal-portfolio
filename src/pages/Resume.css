@@ -29,3 +29,8 @@
     margin: 0;
     z-index: -1;
 }
+
+.pdf {
+    opacity: 0; /* Initially transparent */
+    animation: fadeIn 2s ease-in forwards; /* Apply fade-in animation */
+}
