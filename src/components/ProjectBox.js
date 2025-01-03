@@ -7,19 +7,21 @@ function ProjectBox(props) {
     };
 
     return (
-        <div class = "project-box" onClick = {handleClick}>
-            <div className="project-box-description">
+        <div class = "project-box" onClick = {handleClick} style={{ backgroundImage: `url(${props.image})` }}>
+            <div className="project-box-description" >
                 <div className = "project-details">
                     {props.description}
-                </div> 
-                <div className = "tools">
-                    tools: {props.tools}
                 </div> 
                 <div className = "languages">
                     languages: {props.languages}
                 </div>
+                <div className = "tools">
+                    tools: {props.tools}
+                </div> 
             </div>
-            {props.name}
+            <div class = "name">
+                {props.name}
+            </div>
         </div>
     );
 };
