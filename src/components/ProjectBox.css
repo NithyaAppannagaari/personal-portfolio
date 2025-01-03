@@ -1,0 +1,49 @@
+.project-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20rem; /* Set the width to 20rem */
+    height: 20rem; /* Set the height to 20rem */
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the text color to white for contrast */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    position: relative; /* Ensure description can be positioned over it */
+    overflow: hidden; /* Prevent description from overflowing */
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.project-box:hover {
+    opacity: 1; /* Make the box semi-transparent on hover */
+    background-color: white;
+}
+
+.project-box-description {
+    position: absolute; /* Position the description on top */
+    color: black; /* White text color for description */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    padding: 1rem;
+    border-radius: 8px; /* Optional: to match the box's corners */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.project-box-description .tools {
+    padding-top: 1rem;
+    font-variant:small-caps;
+    font-weight: bold;
+}
+
+.project-box-description .languages {
+    font-variant:small-caps;
+    font-weight: bold;
+}
+
+.project-box:hover .project-box-description {
+    opacity: 1; /* Show the description on hover */
+}

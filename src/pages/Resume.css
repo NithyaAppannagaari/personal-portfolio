@@ -1,6 +1,5 @@
 
-.resume .title {
-    padding: 2rem;
+.resume_class .title {
     font-weight: 300;
     font-size: 3rem;
     color: #ffffff;
@@ -9,6 +8,10 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+}
+
+.resume_class {
+    padding: 2rem;
 }
 
 .container {
@@ -25,9 +28,4 @@
     top: 0;
     margin: 0;
     z-index: -1;
-}
-
-.pdf {
-    padding-right: 2rem;
-    padding-left: 2rem;
 }

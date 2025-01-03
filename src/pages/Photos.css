@@ -5,16 +5,12 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    padding: 2rem;
 }
 
-.photos {
-    padding-right: 2rem;
-    padding-left: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-}
 
-.photos .title {
+
+.photos-class .title {
     font-weight: 300;
     font-size: 3rem;
 }
@@ -22,8 +18,7 @@
 .links {
     display: flex;
     flex-direction: row;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-top: 1rem;
     padding-bottom: 2rem;
 }
 
@@ -46,13 +41,11 @@
     text-transform: lowercase;
     position: relative;
     height: auto;
-    padding-left: 2rem;
     animation: bounce 2s infinite;
 }
 
 .photos-grid {
-    padding-right: 2rem;
-    padding-left: 2rem;
+    
     padding-top: 2rem;
 }
 

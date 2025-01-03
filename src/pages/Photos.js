@@ -32,11 +32,11 @@ const Photos = () => {
 
     return (
         <div class = "photos-class">
-            <div class = "photos">
-                <div class = "title">
-                    @nithoncam
-                </div>  
-            </div>
+            
+            <div class = "title">
+                @nithoncam
+            </div>  
+     
             <div class = "links">
                 <div class = "insta">
                     < a href="https://www.instagram.com/nithoncam/" target="_blank" rel="noopener noreferrer"> 

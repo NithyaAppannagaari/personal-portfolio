@@ -1,7 +1,26 @@
 .code {
-    text-align: left;
-    color: #1e151c;
+    color: #ffffff;
     font-family: "Afacad Flux", serif;
-    font-weight: 650;
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+
+.code .title {
+    font-weight: 300;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.code .description {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.code .projects-grid {
+    padding-top: 2rem;
+    width: 100%;
+    color: #ffffff;
 }

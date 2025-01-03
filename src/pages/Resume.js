@@ -4,11 +4,10 @@ import "./Resume.css";
 const Resume = () => {
     return (
         <div class = "resume_class">
-            <div class = "resume">
-                <div class = "title">
-                    resume
-                </div> 
-            </div>
+            <div class = "title">
+                resume
+            </div> 
+            
             <div class = "container">
                 <div class = "description">
                     everything on my website in just one pdf.

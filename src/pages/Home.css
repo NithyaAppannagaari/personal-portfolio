@@ -30,9 +30,3 @@
     font-weight: 300;
     font-size: 1.5rem;
 }
-
-/* Typing animation */
-@keyframes typing {
-    from { width: 100% }
-    to { width: 0 }
-}
