@@ -12,13 +12,6 @@ const Home = () => {
             <div class = "container">
                 <div class = "description">
                 Hi, Welcome to my website. I'm an undergraduate student at UC Berkeley studying EECS, interested in technology applications within medicine and climate science.                </div>
-                <div class="hiders">
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                </div>
             </div>
         </div>
         

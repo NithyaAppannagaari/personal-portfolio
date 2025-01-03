@@ -13,9 +13,6 @@ const Resume = () => {
                 <div class = "description">
                     everything on my website in just one pdf.
                 </div> 
-                <div class="hiders">
-                    <p>&nbsp;</p>
-                </div>
             </div>
             <div class = "pdf">
                 <embed 
