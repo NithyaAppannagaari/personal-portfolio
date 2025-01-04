@@ -8,8 +8,6 @@
     padding: 2rem;
 }
 
-
-
 .photos-class .title {
     font-weight: 300;
     font-size: 3rem;
@@ -24,12 +22,12 @@
 
 .insta {
     padding-right: 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .youtube {
     padding-right: 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .description {
@@ -62,6 +60,7 @@
     background-color: #000;
     opacity: 0; /* Initially transparent */
     animation: fadeIn 2s ease-in forwards; /* Apply fade-in animation */
+    z-index: 0;
 }
 
 .contact .title {

@@ -2,31 +2,166 @@
     color: #ffffff;
     font-family: "Afacad Flux", serif;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    flex-direction: column; /* Ensure vertical stacking */
+    align-items: flex-start; /* Align items to the start of the column */
+    justify-content: flex-start; /* Start alignment for content */
     padding: 2rem;
+    gap: 1rem; /* Add spacing between stacked elements */
 }
 
 .home .title {
     font-weight: 300;
     font-size: 3rem;
+    width: 100%; /* Make the title take the full width */
+}
+
+.currently-title {
+    color: #ffecda;
+    font-size: 2.5rem;
+    font-weight: 450;
 }
 
 .container {
     color: #ffecda;
     font-family: "Afacad Flux", serif;
-    width: 80%;
+    width: 100%; /* Ensure it adjusts to the parent container width */
     text-transform: lowercase;
-    padding-right: 2rem;
     position: relative;
+    height: auto;
+    display: flex; /* Use flexbox for responsive alignment */
+    flex-direction: column; /* Ensure vertical stacking inside the container */
+    gap: 1rem; /* Add spacing between elements */
 }
 
 .container .description {
-    position: absolute;
-    top: 0;
+    position: static; /* Remove absolute positioning */
     margin: 0;
-    z-index: -1;
     font-weight: 300;
     font-size: 1.5rem;
+    line-height: 1.5; /* Improve readability */
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.project-box-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20rem; /* Set the width */
+    height: 20rem; /* Set the height */
+    background-color: #ffecda; /* Switch to white background */
+    color: #987757; /* Set text color to #201f1f for contrast */
+    font-size: 1.5rem;
+    border-radius: 1rem; /* Rounded corners */
+    text-align: center;
+    background-size: cover; /* Ensure the image covers the entire box */
+    background-position: center; /* Center the image */
+    position: relative; /* Enable overlay and description positioning */
+    overflow: hidden; /* Prevent content overflow */
+    border: 1px solid #ddd; /* Add a light border for subtle definition */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-box {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    margin-right: 1rem;
+    margin-bottom: -7rem; /* Pull up the image slightly */
+    z-index: 2;
+}
+
+.home-scroll {
+    position: fixed;
+    bottom: 20px;  /* Adjust this value as needed to fine-tune the position from the bottom */
+    left: 50%;
+    transform: translateX(-50%);  /* Centers it horizontally */
+    cursor: pointer;
+    z-index: 999;  /* Ensure it appears above other content */
+}
+
+.home-scroll-indicator, .home-go-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #333;
+    animation: bounce 1.5s ease-in-out infinite;  /* Add bounce animation */
+    padding-bottom: 0.6rem;
+}
+
+.home-scroll-indicator .arrow{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: solid 3px #333;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.home-go-to-top .arrowDown {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: solid 3px #ffecda;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(225deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.profile-image {
+    border-radius: 50%;
+    width: 10rem; /* Adjust image size */
+    height: 10rem;
+    border: 3px solid #ffecda; /* Add border matching the hr color */
+    object-fit: cover;
+}
+
+/* Style the hr to appear behind the image */
+.hr-container {
+    position: relative;
+    width: 100%;
+}
+
+.hr-container hr {
+    border: none;
+    border-top: 2px solid #ffecda;
+    margin: 0 auto;
+    z-index: 1;
+    width: 100%;
+}
+
+.contact-title {
+    font-size: 2rem;
+    font-weight:bold;
+    padding-top: 1rem;
+}
+
+.contact-insta, .contact-email {
+    font-size: 1.5rem;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);  /* Adjust the distance of the bounce */
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
