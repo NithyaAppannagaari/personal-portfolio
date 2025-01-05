@@ -1,0 +1,106 @@
+.project-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20rem; /* Set the width */
+    height: 20rem; /* Set the height */
+    background-color: white; /* Switch to white background */
+    color: #201f1f; /* Set text color to #201f1f for contrast */
+    font-size: 1.5rem;
+    border-radius: 1rem; /* Rounded corners */
+    text-align: center;
+    background-size: cover; /* Ensure the image covers the entire box */
+    background-position: center; /* Center the image */
+    position: relative; /* Enable overlay and description positioning */
+    overflow: hidden; /* Prevent content overflow */
+    border: 1px solid #ddd; /* Add a light border for subtle definition */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.project-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 236, 218, 0.6); /* Light semi-transparent overlay */
+    z-index: 1; /* Overlay over background image */
+    transition: background-color 0.3s ease;
+}
+
+.project-box:hover::before {
+    background-color: rgba(255, 236, 218, 0.8); /* Lighten overlay on hover */
+}
+
+.project-box .name {
+    position: absolute;
+    top: 50%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    z-index: 3; /* Ensure it's above other elements */
+    color: #201f1f; /* Ensure visibility on light background */
+    font-size: 1.5rem; /* Adjust size as needed */
+    font-weight: bold; /* Make it stand out */
+    text-align: center; /* Center-align text */
+}
+
+.project-box .link-icon {
+    position: absolute;
+    bottom: 1rem; /* Position near the bottom */
+    right: 1rem; /* Position near the right */
+    z-index: 3; /* Ensure it's above other elements */
+    width: 1.5rem; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    color: #201f1f; /* Match color to the theme */
+    cursor: pointer; /* Make it clickable */
+    opacity: 0;
+}
+
+.project-box-description {
+    position: absolute;
+    color: 3201f1f; /* Description text color */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2; /* Below the name but above the overlay */
+    background: rgba(255, 236, 218, 0.9); /* Light semi-transparent background */
+    height: 100%;
+    width: 100%;
+}
+
+.project-box:hover .project-box-description {
+    opacity: 1; /* Show the description on hover */
+}
+
+.project-box:hover .name {
+    opacity: 0;
+}
+
+.project-box:hover .link-icon {
+    opacity: 1;
+}
+
+.tools {
+    font-variant: small-caps;
+    font-weight:bold;
+}
+
+.languages {
+    font-variant: small-caps;
+    padding-top: 1rem;
+    font-weight:bold;
+}
+
+
