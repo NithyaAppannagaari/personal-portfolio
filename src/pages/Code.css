@@ -1,0 +1,38 @@
+.code {
+    color: #ffffff;
+    font-family: "Afacad Flux", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+    
+}
+
+.code .title {
+    font-weight: 300;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.code .description {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.code .projects-grid {
+    padding-top: 2rem;
+    width: 100%;
+    color: #ffffff;
+    opacity: 0; /* Initially transparent */
+    animation: fadeIn 2s ease-in forwards; /* Apply fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start fully transparent */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+    }
+}
