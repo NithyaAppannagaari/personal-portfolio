@@ -8,16 +8,16 @@ const Navbar = () => {
                 <div className = "navbar-left">
                 <ul className = "nav-links">
                     <li>
-                        <a href="/">Home</a>     
+                        <a href="/app">Home</a>     
                     </li> 
                     <li>
-                        <a href="/projects">My Code</a>     
+                        <a href="/app/projects">My Code</a>     
                     </li>  
                     <li>
-                        <a href="/photography">My Lens</a>     
+                        <a href="/app/photography">My Lens</a>     
                     </li> 
                     <li>
-                        <a href="/resume">My Resume</a>     
+                        <a href="/app/resume">My Resume</a>     
                     </li> 
                 </ul>
                 </div>
