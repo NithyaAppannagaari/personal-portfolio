@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
 
 const images = [
-    '/square1.jpg',
-    '/square2.jpg',
-    '/square3.jpg',
-    '/vertical1.jpg',
-    '/vertical2.jpg',
-    '/vertical3.jpg',
-    '/vertical4.jpg',
-    '/vertical5.jpg',
-    '/vertical6.jpg',
-    '/wide1.jpg',
-    '/wide2.jpg',
-    '/wide3.jpg',
-    '/wide4.jpg',
-    '/wide5.jpg',
+    'square1.jpg',
+    'square2.jpg',
+    'square3.jpg',
+    'vertical1.jpg',
+    'vertical2.jpg',
+    'vertical3.jpg',
+    'vertical4.jpg',
+    'vertical5.jpg',
+    'vertical6.jpg',
+    'wide1.jpg',
+    'wide2.jpg',
+    'wide3.jpg',
+    'wide4.jpg',
+    'wide5.jpg',
 ];
 
 const MasonryGrid = () => {
