@@ -51,7 +51,7 @@ const Photos = () => {
             </div>
 
             <div class = "description">
-                Outside of tech, I have a passion for photography and videography. As an official event photographer for UC Berkeley's Indian Students Association (ISA), I capture the vibrancy of Indian culture. In my free time, I explore nature and architecture through my camera and create videos—it’s how I experience the world through my own lens. 
+                snippets of life using a Sony Alpha 7 III
             </div>
 
             {showScrollDown ? (
