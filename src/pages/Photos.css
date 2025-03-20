@@ -1,0 +1,157 @@
+.photos-class {
+    color: #ffffff;
+    font-family: "Afacad Flux", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+
+.photos-class .title {
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.insta {
+    padding-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.youtube {
+    padding-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.description {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #ffecda;
+    font-family: "Afacad Flux", serif;
+    width: 80%;
+    text-transform: lowercase;
+    position: relative;
+    height: auto;
+}
+
+.photos-grid {
+    opacity: 0; /* Initially transparent */
+    animation: fadeIn 2s ease-in forwards; /* Apply fade-in animation */
+    padding-top: 2rem;
+}
+
+.contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-color: #fff;
+    border-radius: 5vh;
+    border-width:2px;
+    background-color: #000;
+    opacity: 0; /* Initially transparent */
+    animation: fadeIn 2s ease-in forwards; /* Apply fade-in animation */
+    z-index: 0;
+}
+
+.contact .title {
+    font-size: 1.5rem;
+    font-weight:bold;
+    padding-top: 1rem;
+}
+
+.contact .contact-email {
+    padding-bottom: 1rem;
+}
+
+.scroll-indicator {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.go-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.scroll-indicator .arrow {
+    width: 0.5rem;
+    height: 0.5rem;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    transform: rotate(45deg);
+    animation: arrowBlink 2s infinite;
+}
+
+.go-to-top .arrowDown {
+    width: 0.5rem;
+    height: 0.5rem;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    transform: rotate(225deg);
+    animation: arrowBlink 2s infinite;
+    
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes arrowBlink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+

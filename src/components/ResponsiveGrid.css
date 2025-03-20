@@ -1,0 +1,10 @@
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box {
+    padding-top: 1rem;
+}

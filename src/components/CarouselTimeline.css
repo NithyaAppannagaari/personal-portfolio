@@ -1,0 +1,64 @@
+/* Main container for the timeline */
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Add spacing between timeline items */
+    align-items: center;
+    width: 100%;
+    margin: 4rem auto;
+    overflow-y: auto; /* Make it scrollable vertically */
+}
+
+/* Individual timeline item */
+.timeline-item {
+    width: 100%;
+    background-color: #ffecda;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-width: 3px;
+    border-color: white;
+}
+
+/* Date styling */
+.date {
+    font-size: 1.5rem;
+    color: #777;
+    font-weight: bold;
+}
+
+/* Event details */
+.event-details h3 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.event-details p {
+    font-size: 1.5rem;
+    color: #555;
+    font-variant: small-caps;
+    font-weight: 400;
+}
+
+.event-description {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Programming languages and tools */
+.cs-details {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: #444;
+}
+
+.home-languages,
+.home-tools {
+    margin-top: 0.5rem;
+}
