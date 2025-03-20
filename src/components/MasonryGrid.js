@@ -10,11 +10,13 @@ const images = [
     'vertical4.jpg',
     'vertical5.jpg',
     'vertical6.jpg',
+    'vertical7.jpeg',
     'wide1.jpg',
     'wide2.jpg',
     'wide3.jpg',
     'wide4.jpg',
     'wide5.jpg',
+    'wide6.jpeg',
 ];
 
 const MasonryGrid = () => {
